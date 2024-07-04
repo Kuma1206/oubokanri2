@@ -9,8 +9,8 @@
 　https://github.com/Kuma1206/oubokanri  
 
 # ④作ったアプリケーション用のIDまたはPasswordがある場合
-　ID: tadakuma369@gmail.com
-　PW: 123456
+　ID: 新規登録でログイン  
+　PW: 新規登録でログイン  
 
 # ⑤工夫した点・こだわった点
 ・デザインをかっこよく  
