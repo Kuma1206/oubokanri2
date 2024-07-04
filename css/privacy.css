@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(71, 70, 69);
+    color: aliceblue;
+}
+
+.t-area {
+    width: 600px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1px;
+    margin: 0;
+
+}
+
+p {
+    display: flex;
+    justify-content: end;
+    width: 200px;
+    padding: 5px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+input {
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+}
+
+#umare {
+    width: 120px;
+    height: 25px;
+}
+
+#sei {
+    height: 25px;
+}
+
+#nenrei {
+    height: 25px;
+    width: 50px;
+}
+
+#zyusho {
+    width: 350px;
+}
+
+#e-mail {
+    width: 220px;
+}
+
+#shikaku {
+    width: 350px;
+}
+
+#area1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    /* background-color: rgb(192, 188, 188); */
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(102, 96, 96);
+    border-radius: 3px;
+    color: aliceblue;
+}
+
+button:hover {
+    width: 60px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(141, 135, 135);
+    border-radius: 3px;
+    color: aliceblue;
+}
+
+#kensaku {
+    width: 10px;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+}
+
+#modoru {
+    width: 100px;
+}

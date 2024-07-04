@@ -1,0 +1,230 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(71, 70, 69);
+  color: aliceblue;
+}
+
+.t-area {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1px;
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  display: flex;
+  justify-content: start;
+  width: 400px;
+  padding: 5px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+input {
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#umare {
+  width: 120px;
+  height: 20px;
+}
+
+#sei {
+  height: 25px;
+}
+
+#nenrei {
+  height: 25px;
+  width: 50px;
+}
+
+#zyusho {
+  width: 350px;
+}
+
+#e-mail {
+  width: 220px;
+}
+
+#area1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 530px;
+  margin-bottom: 60px;
+  /* background-color: rgb(192, 188, 188); */
+}
+
+#area1b {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 530px;
+  margin-bottom: 60px;
+  /* background-color: rgb(192, 188, 188); */
+}
+
+.t-area1 {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 60px;
+  height: 30px;
+  margin: 20px;
+  border: none;
+  background-color: rgb(102, 96, 96);
+  border-radius: 3px;
+  color: aliceblue;
+}
+
+button:hover {
+  width: 60px;
+  height: 30px;
+  margin: 20px;
+  border: none;
+  background-color: rgb(141, 135, 135);
+  border-radius: 3px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#kensaku {
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+}
+
+#modoru {
+  width: 100px;
+}
+
+.area2 {
+  margin: 10px;
+}
+
+.area3 {
+  margin: 10px;
+}
+
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+#p-area {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.textarea {
+  width: 400px;
+}
+
+#hozon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#syusei {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+  z-index: 000;
+}
+h6 {
+  margin: 0;
+}
+
+/* 本体 */
+.trash {
+  font-size: 8px;
+  position: relative;
+  width: 0.9em;
+  height: 1.2em;
+  border-left: 0.1em solid #f8fcfd;
+  border-right: 0.1em solid #f8fcfd;
+  border-bottom: 0.1em solid #f8fcfd;
+  border-radius: 0 0 0.1em 0.1em;
+  background: linear-gradient(to bottom, #f8fcfd 0%, #f8fcfd 100%) 0.2em 0.2em,
+    linear-gradient(to bottom, #f8fcfd 0%, #f8fcfd 100%) 0.4em 0.2em,
+    linear-gradient(to bottom, #f8fcfd 0%, #f8fcfd 100%) 0.6em 0.2em;
+  background-size: 0.1em 0.8em;
+  background-repeat: no-repeat;
+}
+/* 蓋 */
+.trash::before {
+  content: "";
+  position: absolute;
+  top: -0.1em;
+  left: -0.2em;
+  width: 1.3em;
+  height: 0.1em;
+  background-color: #f8fcfd;
+}
+/* 取っ手 */
+.trash::after {
+  content: "";
+  position: absolute;
+  top: -0.3em;
+  left: 0.1em;
+  width: 0.5em;
+  height: 0.2em;
+  border-top: 0.1em solid #f8fcfd;
+  border-left: 0.1em solid #f8fcfd;
+  border-right: 0.1em solid #f8fcfd;
+  border-radius: 0.1em 0.1em 0 0;
+}
+
+#kategori {
+  display: flex;
+  justify-content: center;
+}
+
+#kategori2 {
+  display: flex;
+  justify-content: center;
+}
+
+#rireki {
+  display: flex;
+  justify-content: center;
+}
+
+#shinki {
+  width: 110px;
+}

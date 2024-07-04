@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+.login-form input {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    /* margin-bottom: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.login-form input[type="password"] {
+    font-family: Arial, sans-serif;
+}
+.password-toggle {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: -40px;
+    right: -175px;
+}
+.password-toggle:hover {
+    color: blue;
+}
+
+.b-login {
+    width: 1000px;
+}
+
+button {
+    width: 250px;
+    height: 37px;
+    background-color: rgb(180, 17, 99);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+button:hover {
+    width: 250px;
+    height: 37px;
+    background-color: rgb(129, 53, 93);
+    border: none;
+    border-radius: 3px;
+    color: #c0bebe;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+.koumoku {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+p {
+    margin: 10px 10px;
+    width: 120px;
+    display: flex;
+    justify-content: end;
+}
+
+#shinki {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

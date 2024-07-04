@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(71, 70, 69);
+    color: aliceblue;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(102, 96, 96);
+    border-radius: 3px;
+    color: aliceblue;
+}
+
+button:hover {
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    border: none;
+    background-color: rgb(141, 135, 135);
+    border-radius: 3px;
+    color: aliceblue;
+    cursor: pointer;
+}

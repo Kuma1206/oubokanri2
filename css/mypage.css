@@ -1,0 +1,386 @@
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  color: #fff;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.batu {
+  /* padding: 10px; */
+  font-size: 25px;
+  cursor: pointer;
+  color: #eaebec;
+}
+
+#toji {
+  display: flex;
+  justify-content: end;
+  width: 280px;
+  padding: 0px 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1d2124;
+  z-index: 000;
+}
+#rogo {
+  margin-left: 50px;
+}
+
+.header-left {
+  flex: 1;
+  padding-left: 50ox;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right span {
+  margin-right: 10px;
+}
+.header-right button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+  border-radius: 3px;
+}
+.header-right button:hover {
+  background-color: #777;
+}
+.document-section {
+  /* position: relative; */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(59, 61, 61);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(206, 204, 204, 0.1);
+}
+.file-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.file-label {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-color: #2a6a9e;
+  color: white;
+  padding: 8px 16px;
+  width: 130px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.file-label:hover {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-color: #399cee;
+  color: white;
+  padding: 8px 16px;
+  width: 130px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #474646;
+  box-shadow: 0px 0px 10px rgba(248, 245, 245, 0.5);
+  z-index: 1000;
+}
+
+.popup.active {
+  display: block;
+}
+
+#bn-up {
+  border: none;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 20px;
+  background-color: rgb(102, 96, 96);
+  border-radius: 3px;
+  color: aliceblue;
+}
+#bn-up:hover {
+  background-color: rgb(91, 95, 91);
+}
+.b-upload {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+}
+#resume-upload {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#job-history-upload {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#photo-upload {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#b-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  padding: 10px;
+  text-decoration: none;
+}
+
+#top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 000;
+}
+
+.area1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 000;
+}
+
+.kategori {
+  width: 80%;
+  height: 300px;
+  background-color: #222529;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  z-index: 000;
+}
+
+.kategori:hover {
+  width: 80%;
+  height: 300px;
+  background-color: #454b53;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  z-index: 000;
+}
+
+.openbtn1 {
+  border-radius: 10px 10px;
+}
+
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh; /*ナビの高さ*/
+  background: #333;
+  /*動き*/
+  transition: all 0.0s;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  left: 0px;
+  width: 300px;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+  display: flex;
+  justify-content: start;
+  /*ナビの数が増えた場合縦スクロール*/
+  /* position: fixed; */
+  z-index: 999;
+  /* padding-left: 100px; */
+  width: 300px;
+  height: 100vh; /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#g-nav-list {
+  display: flex;
+  border-radius: 10px 10px;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  height: 100%;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  background-color: #333;
+  cursor: pointer;
+}
+
+#g-nav li a {
+  color: #beb9b9;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1 {
+  position: fixed;
+  z-index: 9999; /*ボタンを最前面に*/
+  top: 0px;
+  left: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+/*×に変化*/
+.openbtn1 span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+p {
+  margin-top: 0px;
+}
+
+small {
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+#footer {
+  background: #333;
+  padding: 10px;
+}
